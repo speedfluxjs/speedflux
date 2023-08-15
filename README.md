@@ -47,8 +47,6 @@ Rode a aplicação:
 *  Transição suave
 *  Consistência de Design
 
-<hr/>
-
 ### Deploy:
 
 * Cloudfare pages: **https://pages.cloudflare.com**
