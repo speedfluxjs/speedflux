@@ -2,7 +2,7 @@
 
   Aplicação construída usando React + Typescript + Vite. 
   
-* ### Principais componentes:
+### Principais componentes:
 
 * Barra de Navegação
 * Home Page
@@ -11,11 +11,11 @@
 * Sessão de contato
 * Rodapé
 
-* ### Frameworks para CSS:
+### Frameworks para CSS:
 
 * Tailwind
 
-*  ### Características:
+### Características:
 
 *  Design responsivo
 
