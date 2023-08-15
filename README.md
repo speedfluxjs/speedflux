@@ -39,7 +39,11 @@ Rode a aplicação:
 *  Tipografia Legível
 *  Foco na Usabilidade Móvel
 *  Transição suave
-*  Consistência de Design 
+*  Consistência de Design
+
+### Deploy:
+
+* Cloudfare pages: **https://pages.cloudflare.com**
 
 <hr/>
 
