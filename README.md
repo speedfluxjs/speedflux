@@ -2,6 +2,8 @@
 
 ![Texto Alternativo](img/front-page.png)
 
+#### Acesso em: corefusiongym-fitness-react-webapp.pages.dev
+
 ### Descrição:
 CoreFusionGym, uma aplicação web front-end construída com as tecnologias React, Typescript e Vite. Esta aplicação é projetada especialmente para academias e centros de fitness, oferecendo uma experiência completa para seus membros.
 <hr/>
