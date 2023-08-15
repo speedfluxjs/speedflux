@@ -18,6 +18,8 @@ Rode a aplicação:
 
 ```npm run dev```
 
+<hr/>
+
 ### Principais componentes:
 
 * Barra de Navegação
@@ -27,9 +29,13 @@ Rode a aplicação:
 * Sessão de contato
 * Rodapé
 
+<hr/>
+
 ### Frameworks para CSS:
 
 * Tailwind
+
+<hr/>
 
 ### Características:
 
@@ -40,6 +46,8 @@ Rode a aplicação:
 *  Foco na Usabilidade Móvel
 *  Transição suave
 *  Consistência de Design
+
+<hr/>
 
 ### Deploy:
 
