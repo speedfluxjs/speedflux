@@ -1,4 +1,4 @@
-## CoreFusionGym: A Fitness Front-end Web Application | Uma aplicação web front-end fitness para academias
+## *CoreFusionGym*: A Fitness Front-end Web Application | Uma aplicação web front-end fitness para academias
 
 ![Texto Alternativo](img/front-page.png)
 
