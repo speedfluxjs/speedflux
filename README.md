@@ -51,6 +51,10 @@ Rode a aplicação:
 
 * Cloudfare pages: **https://pages.cloudflare.com**
 
+### Preview:
+
+https://github.com/GuiFernandess7/CoreFusionGym-Fitness-React-WebApp/assets/63022500/66ac7038-65f9-4d88-968c-82e64686c738
+
 <hr/>
 
 ### Description:
