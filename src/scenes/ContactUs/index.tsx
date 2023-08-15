@@ -43,12 +43,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">ENTRE EM CONTATO</span> 
           </HText>
           <p className="my-5">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            Ficamos encantados em ouvir de você na CoreFusion Gym! Estamos aqui para responder a todas as suas 
+            perguntas, fornecer mais informações sobre nossos serviços e ajudá-lo a dar o primeiro passo 
+            em direção a uma jornada de bem-estar transformadora.
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
+                placeholder="NOME"
                 {...register("name", {
                   required: true,
                   maxLength: 100,
@@ -107,7 +107,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <textarea
                 className={inputStyles}
-                placeholder="MESSAGE"
+                placeholder="MENSAGEM"
                 rows={4}
                 cols={50}
                 {...register("message", {
@@ -128,7 +128,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
-                SUBMIT
+                ENVIAR
               </button>
             </form>
           </motion.div>

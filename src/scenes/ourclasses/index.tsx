@@ -11,19 +11,21 @@ import { Class } from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "CoreStrength Circuit",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Uma aula desafiadora que se concentra no fortalecimento do núcleo e na melhoria da resistência muscular",
     image: image1,
   },
   {
-    name: "Yoga Classes",
+    name: "ZenYoga Fusion",
+    description:
+      "Esta classe combina as técnicas de alongamento e fortalecimento do yoga com a prática da atenção plena. Você vai ganhar flexibilidade, equilíbrio e foco mental enquanto se conecta com sua respiração e relaxa a mente.",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
+    name: "CardioKick Power",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Uma sessão energética que combina movimentos de cardio com técnicas de artes marciais. Você vai melhorar seu condicionamento cardiovascular, enquanto a liberação de endorfinas alivia o estresse.",
     image: image3,
   },
   {
@@ -66,12 +68,12 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+            <HText>NOSSAS CLASSES</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              oferecemos uma ampla variedade de classes projetadas para atender às necessidades individuais de nossos 
+              membros, abrangendo tanto a dimensão física quanto a mental do bem-estar. Nossa abordagem única 
+              combina treinamento físico inovador com práticas de mindfulness, proporcionando uma experiência 
+              transformadora e holística. Aqui está uma visão geral das classes que temos a oferecer:
             </p>
           </div>
         </motion.div>

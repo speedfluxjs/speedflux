@@ -42,13 +42,19 @@ export const Home = ({ setSelectedPage}: Props) => {
                         <img alt="home-page-text" src={HomePageText} />
                     </div>
                 </div>
-                <p className='m-8 text-sm'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p className='m-8 text-sm pb-0 mb-2'>
+                        Bem-vindo à CoreFusion Gym, onde a jornada para um corpo saudável 
+                    e uma mente forte começa. Somos mais do que uma academia, somos um espaço dedicado à 
+                    transformação holística. Aqui, fundimos os elementos essenciais do fitness para criar 
+                    uma experiência única e inspiradora.
                 </p>
+                <p className='m-8 text-sm my-0'>
+                        Na CoreFusion, acreditamos que a chave para um estilo de vida equilibrado reside na harmonia 
+                    entre o núcleo físico e a vitalidade mental. Nossas aulas dinâmicas e orientadas por instrutores 
+                    altamente qualificados abrangem desde treinamento funcional e cardio revigorante até práticas 
+                    de mindfulness que nutrem a sua paz interior.
+                </p>
+                
             </motion.div>
 
             {/* actions */}
@@ -64,14 +70,14 @@ export const Home = ({ setSelectedPage}: Props) => {
                 }}
                     >
                 <ActionButton setSelectedPage={setSelectedPage}>
-                    Join Now
+                    Junte-se Agora
                 </ActionButton>
                 <AnchorLink
                     className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
                     onClick={() => setSelectedPage(SelectedPage.ContactUs)}
                     href={`#${SelectedPage.ContactUs}`}
                 >
-                    <p>Learn More</p>
+                    <p>Veja Mais</p>
                 </AnchorLink>
             </motion.div>
         </div>
