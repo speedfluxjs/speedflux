@@ -1,5 +1,7 @@
 ## CoreFusionGym: A Fitness Front-end Web Application | Uma aplicação web front-end fitness para academias
 
+![Texto Alternativo](img/front-page.png)
+
 ### Descrição:
 CoreFusionGym, uma aplicação web front-end construída com as tecnologias React, Typescript e Vite. Esta aplicação é projetada especialmente para academias e centros de fitness, oferecendo uma experiência completa para seus membros.
 <hr/>
