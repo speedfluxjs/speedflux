@@ -4,7 +4,7 @@
 CoreFusionGym, uma aplicação web front-end construída com as tecnologias React, Typescript e Vite. Esta aplicação é projetada especialmente para academias e centros de fitness, oferecendo uma experiência completa para seus membros.
 <hr/>
 
-### Rodar na máquina
+### Rodar:
 
 Instale os pacotes:
 
