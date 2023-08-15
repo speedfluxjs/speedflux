@@ -37,4 +37,46 @@ Rode a aplicação:
 *  Transição suave
 *  Consistência de Design 
 
+<hr/>
+
+### Description:
+CoreFusionGym, a front-end web application built using React, Typescript, and Vite technologies. This application is specially designed for gyms and fitness centers, offering a comprehensive experience for its members.
+
+<hr/>
+
+### To Run:
+
+Install the packages:
+
+```npm install```
+
+Run the application:
+
+```npm run dev```
+
+### Key Components:
+
+* Navigation Bar
+* Home Page
+* Benefits
+* Offered Classes
+* Contact Section
+* Footer
+* CSS Framework:
+* Tailwind
+
+### Features:
+* Responsive Design
+* UI/UX
+* Harmonious Color Palette
+* Readable Typography
+* Focus on Mobile Usability
+* Smooth Transitions
+* Design Consistency
+UI/UX
+Harmonious Color Palette
+Readable Typography
+Focus on Mobile Usability
+Smooth Transitions
+Design Consistency
 
