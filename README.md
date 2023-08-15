@@ -53,7 +53,6 @@ Rode a aplicação:
 
 ### Preview:
 
-https://github.com/GuiFernandess7/CoreFusionGym-Fitness-React-WebApp/assets/63022500/66ac7038-65f9-4d88-968c-82e64686c738
 
 <hr/>
 
