@@ -1,27 +1,46 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
+import ContactUsPageGraphic02 from "@/assets/ContactUsPagegraphic02.png";
 import HText from "@/shared/HText";
+import emailjs from "emailjs-com";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
-  px-5 py-3 placeholder-white`;
+  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
   const {
     register,
-    trigger,
+    handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e: any) => {
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
+  const onSubmit = async (data: any) => {
+    try {
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      };
+
+      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+      const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+
+      if (!serviceId || !templateId || !userId) {
+        alert("Erro: Variáveis de ambiente não configuradas corretamente.");
+        return;
+      }
+
+      await emailjs.send(serviceId, templateId, templateParams, userId);
+
+      alert("Email enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar email:", error);
+      alert("Ocorreu um erro ao enviar a mensagem.");
     }
   };
 
@@ -43,12 +62,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">ENTRE EM CONTATO</span> 
+            <span className="text-primary-500">ENTRE EM CONTATO</span>
           </HText>
           <p className="my-5">
-            Ficamos encantados em ouvir de você na CoreFusion Gym! Estamos aqui para responder a todas as suas 
-            perguntas, fornecer mais informações sobre nossos serviços e ajudá-lo a dar o primeiro passo 
-            em direção a uma jornada de bem-estar transformadora.
+            Ficamos empolgados em ouvir de você na <strong>SPEEDFLUX!</strong> Estamos prontos para responder a todas as suas
+            dúvidas, fornecer informações detalhadas sobre como nossa base de dados de leads qualificados pode impulsionar o
+            crescimento do seu negócio, e ajudá-lo a dar o primeiro passo em direção a uma abordagem mais eficiente e
+            estratégica para atrair os contatos certos. Nossa equipe está à disposição para entender as suas necessidades
+            específicas e oferecer soluções personalizadas que maximizem suas oportunidades de negócios.
           </p>
         </motion.div>
 
@@ -65,12 +86,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <form
-              target="_blank"
-              onSubmit={onSubmit}
-              action="https://formsubmit.co/b2ad8a026fcbc1d7ddaa3a965b330d52"
-              method="POST"
-            >
+            <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 className={inputStyles}
                 type="text"
@@ -82,9 +98,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.name && (
                 <p className="mt-1 text-primary-500">
-                  {errors.name.type === "required" && "This field is required."}
+                  {errors.name.type === "required" && "Este campo é obrigatório."}
                   {errors.name.type === "maxLength" &&
-                    "Max length is 100 char."}
+                    "O nome pode ter no máximo 100 caracteres."}
                 </p>
               )}
 
@@ -100,8 +116,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               {errors.email && (
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
-                    "This field is required."}
-                  {errors.email.type === "pattern" && "Invalid email address."}
+                    "Este campo é obrigatório."}
+                  {errors.email.type === "pattern" && "Endereço de e-mail inválido."}
                 </p>
               )}
 
@@ -118,9 +134,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               {errors.message && (
                 <p className="mt-1 text-primary-500">
                   {errors.message.type === "required" &&
-                    "This field is required."}
+                    "Este campo é obrigatório."}
                   {errors.message.type === "maxLength" &&
-                    "Max length is 2000 char."}
+                    "A mensagem pode ter no máximo 2000 caracteres."}
                 </p>
               )}
 
@@ -141,14 +157,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
+              visible: { opacity: 1, y: -80 },
             }}
           >
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
               <img
                 className="w-full"
                 alt="contact-us-page-graphic"
-                src={ContactUsPageGraphic}
+                src={ContactUsPageGraphic02}
               />
             </div>
           </motion.div>

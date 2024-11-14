@@ -1,6 +1,5 @@
 import { Navbar } from "./scenes/navbar";
 import { Home } from "./scenes/home";
-import OurClasses from "./scenes/ourclasses";
 import { Benefits } from "./scenes/benefits";
 import ContactUs from "./scenes/ContactUs";
 import Footer from "./scenes/Footer";
@@ -17,7 +16,7 @@ function App() {
       if (window.scrollY === 0) {
         setIsTopOfPage(true)
         setSelectedPage(SelectedPage.Home)
-      } 
+      }
       if (window.scrollY !== 0) setIsTopOfPage(false)
     }
   window.addEventListener("scroll", handleScroll)
@@ -25,17 +24,15 @@ function App() {
   }, [])
 
   return (
-    <div className='app bg-gray-20'>
+    <div className='app bg-gradient-whiteblue'>
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}/>
       <Home
-        setSelectedPage={setSelectedPage}/> 
+        setSelectedPage={setSelectedPage}/>
       <Benefits
-        setSelectedPage={setSelectedPage}/> 
-      <OurClasses 
-        setSelectedPage={setSelectedPage} />
+        setSelectedPage={setSelectedPage}/>
       <ContactUs
         setSelectedPage={setSelectedPage}/>
       <Footer/>

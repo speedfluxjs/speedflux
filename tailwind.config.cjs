@@ -1,22 +1,21 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         "gray-20": "#F8F4EB",
-        "gray-50": "#EFE6E6",
-        "gray-100": "#DFCCCC",
-        "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
-        "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
-      }, 
+        "gray-50": "#E1E1E1",
+        "gray-100": "#B0B0B0",
+        "gray-500": "#4A4A4A",
+        "primary-100": "#E8F5E9",
+        "primary-300": "#D9EAD3",
+        "primary-500": "#B6D7A8",
+        "secondary-400": "#A8DAB5",
+        "secondary-500": "#28A745",
+        "black-100": "#04231b"
+      },
       backgroundImage: (theme) => ({
-        "gradient-yellowred":
-          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "gradient-whiteblue": "linear-gradient(90deg, #E8F5E9 0%, #D9EAD3 50%, #B6D7A8 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
